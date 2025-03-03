@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Đơn Giản</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #005f73;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chào mừng bạn đến với trang web của tôi!</h1>
+    <p id="message">Nhấn nút bên dưới để thay đổi nội dung.</p>
+    <button onclick="changeText()">Nhấn vào tôi</button>
+
+    <script>
+        function changeText() {
+            document.getElementById("message").innerHTML = "Bạn vừa nhấn nút! Chúc bạn một ngày vui vẻ 😊";
+        }
+    </script>
+</body>
+</html>
 
